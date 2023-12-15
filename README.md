@@ -15,18 +15,18 @@
 - **HTML**
 - **CSS** 
 - **JAVASCRIPT**
-- ** Estrutura de dados HTML**
+- **Estrutura de dados HTML**
 - **Animações com CSS**
 - **Funções no Javascript**
 - **Manipulação da DOM**
 - **Biblioteca JS Math()**
-- **Funções *callback**
+- **Funções callback**
 - **Arrays**
 
   
   ---
   <h3 align="center">Projeto💻 </h3>
-  <p>Acesse o projeto em <a href="https://micaela-marques.github.io/jogodaadivinha-o/"> site🌐
+  <p>Acesse o projeto em <a href="https://micaela-marques.github.io/Biscoitodasorte/"> site🌐
   </p>
 
 
