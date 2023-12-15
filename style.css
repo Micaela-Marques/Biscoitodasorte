@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+
+    --background_body: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    --backgroud_form: #fff;
+    --form_shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+    --color_text: #34355B;
+    --background_luck: #E4EDF1;
+    --text: #000;
+    --background_button: #FF9500;
+}
+
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Screen 1*/
+main {
+    display: flex;
+    justify-content: center;
+    margin: 239px auto;
+}
+
+.screen1 {
+    display: flex;
+    flex-direction: column;
+    width: 428px;
+    padding: 48px 64px 64px 64px;
+    align-items: center;
+    gap: 14px;
+
+    border-radius: 5px;
+    background: var(--backgroud_form);
+    box-shadow: var(--form_shadow);
+    animation: transition 3s;
+}
+
+h1 {
+    color: var(--color_text);
+    text-align: center;
+    font-family: Montserrat;
+}
+
+p {
+    color: var(--color_text);
+    text-align: center;
+    font-family: DM Sans;
+}
+
+#btnluck {
+    background: var(--backgroud_form);
+    border: none;
+}
+#luck_today {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Screen 2*/
+
+.screen2 {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 428px;
+    padding: 48px 64px;
+    border-radius: 5px;
+    background: var(--backgroud_form);
+    box-shadow: var(--form_shadow);
+    animation: transition 3s;
+
+}
+
+h2 {
+    color: #34355B;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+span {
+    color: var(--text);
+    text-align: center;
+    font-family: Dancing Script;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.luck {
+    background: var(--background_luck);
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    animation: downtop 3s;
+    transition: 1s;
+}
+
+#btn_reset {
+    width: 174px;
+    height: 52px;
+    background: var(--background_button);
+    margin-inline: auto;
+    border: none;
+    margin-top: 59px;
+}
+
+.text_btn {
+    color: var(--backgroud_form);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 700;
+
+
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Adicione a animação de tremor horizontal */
+@keyframes moveButton {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(5px);
+    }
+}
+
+/* Aplicar a animação de tremor ao botão apenas quando o mouse está sobre ele */
+#btnluck {
+    transition: transform 0.3s;
+    /* Adiciona uma transição suave ao movimento do botão */
+}
+
+#btnluck:hover {
+    animation: moveButton 0.6s infinite;
+    /* A animação é ativada apenas quando o mouse está sobre o botão */
+}
+
+/*Animation ao abrir o biscoito*/
+
+@keyframes downtop {
+    0% {
+        scale: 0;
+        top: 115px;
+    }
+
+    100% {
+        scale: 1;
+        top: 0;
+    }
+}
+
+@keyframes transition {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}

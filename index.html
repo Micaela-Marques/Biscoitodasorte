@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biscoito da sorte</title>
+    <link rel="shortcut icon" href="./assets/biscoito-da-sorte.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div class="screen1">
+            <h1>Qual é a sua sorte <br> de hoje?</h1>
+            <p>Abra o biscoito e descubra!</p>
+
+            <form>
+                <button id="btnluck"> <img src="./assets/biscoito home.png" alt="" />
+            </form>
+        </div>
+
+        <div class="screen2 hide">
+            <h2>Aqui está a sua sorte de hoje:</h2>
+
+            <div class="luck">
+                <span id="luck_today">
+                    carregando...               
+                </span>
+
+            </div>
+
+            <img src="./assets/biscoito sorte.png" alt="">
+
+            <button id="btn_reset" onclick="resetScreen()">
+                <span class="text_btn">Abrir outro biscoito</span>
+            </button>
+
+        </div>
+    </main>
+
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
